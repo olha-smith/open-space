@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
+
+.space {
+    background-image: url("images/space.png");
+    height: 100vh;
+    margin: 0 auto;
+    width: 90%;
+}
+
+.planet-area {
+    align-items: flex-end;
+    display: flex;
+    height: inherit;
+}
+
+.planet {
+    height: 40em;
+    position: relative;
+    bottom: 0;
+    left: 0;
+}
+
+.rocket {
+    height: 10em;
+    /*margin: auto auto 20em -18em;*/
+    position: absolute;
+    /*left: 27em;*/
+    /*top: 22em;*/
+    transform: rotate(30deg);
+}
+
+.rocket {
+
+}
+
+.control-panel {
+    background: linear-gradient(rgb(200, 200, 200), rgb(240, 240, 240));
+    border: rgba(240, 240, 240, 100%) 1em outset;
+    border-radius: 2em;
+    height: 16em;
+    padding: 1em 5em 1.5em;
+    position: fixed;
+    right: 5em;
+    top: 15em;
+    width: 20em;
+}
+
+.control-panel__inner {
+    align-items: center;
+    height: inherit;
+    margin: 0 auto;
+    text-align: center;
+    width: 20em;
+}
+
+#password-field {
+    background: radial-gradient(rgb(100, 190, 160), rgb(100, 100, 160));
+    border: rgba(255, 255, 255, 90%) 2px inset;
+    border-radius: 1em;
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.1em;
+    text-align: center;
+    height: 2em;
+    width: 14em;
+}
+
+#password-field:disabled {
+    background: radial-gradient(rgba(100, 190, 160, 50%), rgba(100, 100, 160, 50%));
+}
+
+::placeholder {
+    color: rgba(255, 255, 255, 40%);
+}
+
+.button {
+    border: rgba(240, 240, 240, 100%) .2rem outset;
+    border-radius: 1em;
+    color: rgb(255, 255, 255);
+    font-family: 'Ubuntu', sans-serif;
+    margin: 0.5em 0;
+}
+
+#get-password {
+    background: rgb(120, 100, 100);
+    font-size: 1.1em;
+    padding: 0.4em 0.5em;
+}
+
+#get-password:disabled {
+    background: rgba(120, 100, 100, 50%);
+    color: rgba(255, 255, 255, 50%);
+}
+
+#launch {
+    background-color: rgba(190, 40, 0, 80%);
+    font-size: 1.7em;
+    margin: 0.3em 0;
+    padding: 0.6em 0.4em;
+}
+
+#launch:disabled {
+    background-color: rgba(190, 40, 0, 30%);
+}
+
+.check-buttons {
+    display: flex;
+    justify-content: space-around;
+    width: inherit;
+}
+
+.check-buttons input {
+    height: 0;
+    width: 0;
+}
+
+input[type="checkbox"] {
+    background: #FFF;
+    border: 1px solid #808080;
+    cursor: pointer;
+    height: 25px;
+    margin: 0.8em 0;
+    width: 25px;
+}
+
+.levers {
+    align-content: center;
+    height: 5em;
+    display: flex;
+    justify-content: center;
+    width: inherit;
+}
+
+input[type="range"] {
+    margin: 0;
+    transform: rotate(-90deg);
+    width: 5em;
+}

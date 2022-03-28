@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Open Space</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+   <div class="space">
+       <div class="planet-area">
+           <img class="planet" src="images/mars.png" alt="Red Mars with volcanoes">
+           <img class="rocket" id="rocket" src="images/rocket.png" alt="White rocket with red stripes" style="left: 27em; top: 22em">
+       </div>
+
+       <div class="control-panel">
+           <div class="control-panel__inner">
+               <input type="password" id="password-field" placeholder="Enter password to unlock">
+               <input type="button" id="get-password" class="button" value="Ok">
+
+               <div class="check-buttons">
+                   <input type="checkbox" disabled onchange="isSettingsOn()">
+                   <input type="checkbox" disabled onchange="isSettingsOn()">
+                   <input type="checkbox" disabled onchange="isSettingsOn()">
+                   <input type="checkbox" disabled onchange="isSettingsOn()">
+                   <input type="checkbox" disabled onchange="isSettingsOn()">
+                   <input type="checkbox" disabled onchange="isSettingsOn()">
+               </div>
+
+               <div class="levers">
+                   <input type="range" disabled onchange="isSettingsOn()">
+                   <input type="range" disabled onchange="isSettingsOn()">
+                   <input type="range" disabled onchange="isSettingsOn()">
+                   <input type="range" disabled onchange="isSettingsOn()">
+                   <input type="range" disabled onchange="isSettingsOn()">
+               </div>
+
+               <input type="button" class="button" id="launch" value="Launch" disabled>
+           </div>
+       </div>
+   </div>
+</body>
+</html>
